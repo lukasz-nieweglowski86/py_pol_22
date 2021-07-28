@@ -5,7 +5,6 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import Select
 from selenium.common.exceptions import NoSuchElementException
 from selenium.common.exceptions import NoAlertPresentException
-#import test_data as test_data
 from test_data import PageUrl, AdminCredentials, GroupData
 import unittest
 
