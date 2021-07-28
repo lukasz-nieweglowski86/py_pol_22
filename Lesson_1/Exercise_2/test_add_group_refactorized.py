@@ -5,7 +5,8 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import Select
 from selenium.common.exceptions import NoSuchElementException
 from selenium.common.exceptions import NoAlertPresentException
-import test_data as test_data
+#import test_data as test_data
+from test_data import PageUrl, AdminCredentials, GroupData
 import unittest
 
 
@@ -15,13 +16,13 @@ class TestAddGroup(unittest.TestCase):
         self.wd.implicitly_wait(30)
 
     def open_home_page(self, wd):
-        wd.get(test_data.homepage_url)
+        wd.get(PageUrl.homepage_url)
 
     def login(self, wd):
         wd.find_element_by_name("user").clear()
-        wd.find_element_by_name("user").send_keys(test_data.admin_login)
+        wd.find_element_by_name("user").send_keys(AdminCredentials.admin_login)
         wd.find_element_by_name("pass").clear()
-        wd.find_element_by_name("pass").send_keys(test_data.admin_password)
+        wd.find_element_by_name("pass").send_keys(AdminCredentials.admin_password)
         wd.find_element_by_xpath("//input[@value='Login']").click()
 
     def open_groups_page(self, wd):
@@ -33,13 +34,13 @@ class TestAddGroup(unittest.TestCase):
         # fill group form
         wd.find_element_by_name("group_name").click()
         wd.find_element_by_name("group_name").clear()
-        wd.find_element_by_name("group_name").send_keys(test_data.group_name)
+        wd.find_element_by_name("group_name").send_keys(GroupData.group_name)
         wd.find_element_by_name("group_header").click()
         wd.find_element_by_name("group_header").clear()
-        wd.find_element_by_name("group_header").send_keys(test_data.group_header)
+        wd.find_element_by_name("group_header").send_keys(GroupData.group_header)
         wd.find_element_by_name("group_footer").click()
         wd.find_element_by_name("group_footer").clear()
-        wd.find_element_by_name("group_footer").send_keys(test_data.group_footer)
+        wd.find_element_by_name("group_footer").send_keys(GroupData.group_footer)
         # submit group creation
         wd.find_element_by_name("submit").click()
 
