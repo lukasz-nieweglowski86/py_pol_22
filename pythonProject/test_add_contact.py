@@ -78,20 +78,16 @@ class TestAddContact(unittest.TestCase):
         # date of birth section
         wd.find_element_by_name("bday").click()
         Select(wd.find_element_by_name("bday")).select_by_visible_text(contact.bday)
-        wd.find_element_by_xpath("//option[@value='11']").click()
         wd.find_element_by_name("bmonth").click()
         Select(wd.find_element_by_name("bmonth")).select_by_visible_text(contact.bmonth)
-        wd.find_element_by_xpath("//option[@value='April']").click()
         wd.find_element_by_name("byear").click()
         wd.find_element_by_name("byear").clear()
         wd.find_element_by_name("byear").send_keys(contact.byear)
         # date of anniversary section
         wd.find_element_by_name("aday").click()
         Select(wd.find_element_by_name("aday")).select_by_visible_text(contact.aday)
-        wd.find_element_by_xpath("//div[@id='content']/form/select[3]/option[18]").click()
         wd.find_element_by_name("amonth").click()
         Select(wd.find_element_by_name("amonth")).select_by_visible_text(contact.amonth)
-        wd.find_element_by_xpath("//div[@id='content']/form/select[4]/option[12]").click()
         wd.find_element_by_name("ayear").click()
         wd.find_element_by_name("ayear").clear()
         wd.find_element_by_name("ayear").send_keys(contact.ayear)
@@ -119,13 +115,13 @@ class TestAddContact(unittest.TestCase):
         self.open_home_page(wd)
         self.login(wd, username="admin", password="secret")
         self.add_contact(wd, Contact(firstname="Test_firstname", middlename="Test_middlename",
-                                         lastname="Test_lastname", nickname="Test_nickname", title="Test_title",
-                                         company="Test_company", address1="Test_address1", home_phonenumber="123123123",
-                                         mobile_phonenumber="321321321", work_phonenumber="135135135", fax="123456789",
-                                         email1="test_email1@test.com", email2="test_email2@test.com",
-                                         email3="test_email3@test.com", homepage="www.google.com", bday="11",
-                                         bmonth="April", byear="1988", aday="16", amonth="November", ayear="2020",
-                                         address2="Test_address2", phone2="909808707", notes="Lorem ipsum..."))
+                                     lastname="Test_lastname", nickname="Test_nickname", title="Test_title",
+                                     company="Test_company", address1="Test_address1", home_phonenumber="123123123",
+                                     mobile_phonenumber="321321321", work_phonenumber="135135135", fax="123456789",
+                                     email1="test_email1@test.com", email2="test_email2@test.com",
+                                     email3="test_email3@test.com", homepage="www.google.com", bday="1",
+                                     bmonth="January", byear="1988", aday="2", amonth="February", ayear="2020",
+                                     address2="Test_address2", phone2="909808707", notes="Lorem ipsum..."))
         self.return_to_home_page(wd)
         self.logout(wd)
 
