@@ -12,7 +12,7 @@ def app(request):
 
 
 def test_add_contact(app):
-    app.login(username="admin", password="secret")
+    app.session.login(username="admin", password="secret")
     app.add_contact(Contact(firstname="Test_firstname", middlename="Test_middlename",
                             lastname="Test_lastname", nickname="Test_nickname", title="Test_title",
                             company="Test_company", address1="Test_address1", home_phonenumber="123123123",
@@ -21,4 +21,4 @@ def test_add_contact(app):
                             email3="test_email3@test.com", homepage="www.google.com", bday="11",
                             bmonth="March", byear="1986", aday="7", amonth="July", ayear="2020",
                             address2="Test_address2", phone2="909808707", notes="Lorem ipsum..."))
-    app.logout()
+    app.session.logout()
