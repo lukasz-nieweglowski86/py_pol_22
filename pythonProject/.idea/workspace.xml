@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ca21a818-9ce7-4c04-be1e-d112b99a5304" name="Changes" comment="the auxiliary class 'SessionHelper' has been extracted">
+    <list default="true" id="ca21a818-9ce7-4c04-be1e-d112b99a5304" name="Changes" comment="separated classes for working with groups and contacts">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixture/application.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/application.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fixture/contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/contact.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fixture/group.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/group.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/test_add_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_add_contact.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/test_add_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_add_group.py" afterDir="false" />
     </list>
@@ -37,6 +38,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\lukas\Desktop\projects\repo\py_pol_22\pythonProject" />
       <recent name="C:\Users\lukas\Desktop\projects\repo\py_pol_22\pythonProject\test" />
       <recent name="C:\Users\lukas\Desktop\projects\repo\py_pol_22\pythonProject\fixture" />
       <recent name="C:\Users\lukas\Desktop\projects\repo\py_pol_22\pythonProject\model" />
@@ -88,7 +90,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628627378329</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="separated classes for working with groups and contacts">
+      <created>1628629120794</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1628629120794</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -101,11 +110,13 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="created packages for different spheres of responsibility" />
     <MESSAGE value="the auxiliary class 'SessionHelper' has been extracted" />
-    <option name="LAST_COMMIT_MESSAGE" value="the auxiliary class 'SessionHelper' has been extracted" />
+    <MESSAGE value="separated classes for working with groups and contacts" />
+    <option name="LAST_COMMIT_MESSAGE" value="separated classes for working with groups and contacts" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
