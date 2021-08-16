@@ -99,6 +99,13 @@ class ContactHelper:
         # submit deletion
         wd.find_element_by_xpath("//input[@value='Delete']").click()
 
+    def edit_first_contact(self):
+        wd = self.app.wd
+        # click first contact's 'Edit' icon
+        wd.find_element_by_xpath("//img[@title='Edit']").click()
+        # submit edition
+        wd.find_element_by_name("update").click()
+
     def return_to_home_page(self):
         wd = self.app.wd
         wd.find_element_by_link_text("home page").click()
