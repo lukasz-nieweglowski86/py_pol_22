@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ca21a818-9ce7-4c04-be1e-d112b99a5304" name="Changes" comment="- created fixture for all tests in conftest.py&#10;- created test with contact deletion">
+    <list default="true" id="ca21a818-9ce7-4c04-be1e-d112b99a5304" name="Changes" comment="- first group and contact editing test added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fixture/contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/contact.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fixture/group.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/group.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_del_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_del_first_contact.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_del_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_del_first_group.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_edit_first_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_edit_first_contact.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_edit_first_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_edit_first_group.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +104,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628715858795</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="- first group and contact editing test added">
+      <created>1629135983043</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1629135983043</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -124,7 +131,8 @@
     <MESSAGE value="the auxiliary class 'SessionHelper' has been extracted" />
     <MESSAGE value="separated classes for working with groups and contacts" />
     <MESSAGE value="- created fixture for all tests in conftest.py&#10;- created test with contact deletion" />
-    <option name="LAST_COMMIT_MESSAGE" value="- created fixture for all tests in conftest.py&#10;- created test with contact deletion" />
+    <MESSAGE value="- first group and contact editing test added" />
+    <option name="LAST_COMMIT_MESSAGE" value="- first group and contact editing test added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
