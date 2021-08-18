@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ca21a818-9ce7-4c04-be1e-d112b99a5304" name="Changes" comment="- first group and contact editing tests code refactored">
+    <list default="true" id="ca21a818-9ce7-4c04-be1e-d112b99a5304" name="Changes" comment="conftest.py modifications">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_add_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_add_contact.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_add_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_add_group.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_del_first_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_del_first_contact.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_del_first_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_del_first_group.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_edit_first_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_edit_first_contact.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_edit_first_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_edit_first_group.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fixture/application.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/application.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,7 +143,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629233803899</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="conftest.py modifications">
+      <created>1629316317655</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1629316317655</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -171,7 +173,8 @@
     <MESSAGE value="- first group and contact editing test added" />
     <MESSAGE value="- first group and contact editing tests modified" />
     <MESSAGE value="- first group and contact editing tests code refactored" />
-    <option name="LAST_COMMIT_MESSAGE" value="- first group and contact editing tests code refactored" />
+    <MESSAGE value="conftest.py modifications" />
+    <option name="LAST_COMMIT_MESSAGE" value="conftest.py modifications" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
