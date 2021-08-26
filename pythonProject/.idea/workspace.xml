@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ca21a818-9ce7-4c04-be1e-d112b99a5304" name="Changes" comment="navigation optimized">
+    <list default="true" id="ca21a818-9ce7-4c04-be1e-d112b99a5304" name="Changes" comment="lists used in groups">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixture/group.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/group.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/group.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/group.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_add_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_add_group.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_del_first_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_del_first_group.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_edit_first_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_edit_first_group.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fixture/contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/contact.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/contact.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_add_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_add_contact.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_del_first_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_del_first_contact.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_edit_first_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_edit_first_contact.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +46,7 @@
       <recent name="C:\Users\lukas\Desktop\projects\repo\py_pol_22\pythonProject\model" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests in test_add_contact.py">
+  <component name="RunManager" selected="Python tests.Python tests in test_edit_first_group.py">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="pythonProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -98,8 +98,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests in test_add_contact.py" />
         <item itemvalue="Python tests.Python tests in test_edit_first_group.py" />
+        <item itemvalue="Python tests.Python tests in test_add_contact.py" />
       </list>
     </recent_temporary>
   </component>
@@ -196,7 +196,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629748694488</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="lists used in groups">
+      <created>1629996557535</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1629996557535</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -224,7 +231,8 @@
     <MESSAGE value="login and logout methods intelligence increased" />
     <MESSAGE value="edition and deletion tests modified" />
     <MESSAGE value="navigation optimized" />
-    <option name="LAST_COMMIT_MESSAGE" value="navigation optimized" />
+    <MESSAGE value="lists used in groups" />
+    <option name="LAST_COMMIT_MESSAGE" value="lists used in groups" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

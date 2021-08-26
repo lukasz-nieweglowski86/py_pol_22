@@ -11,12 +11,17 @@ def test_edit_first_contact(app):
                                 email3="test_email3@test.com", homepage="www.google.com", bday="11",
                                 bmonth="March", byear="1986", aday="7", amonth="July", ayear="2020",
                                 address2="Test_address2", phone2="909808707", notes="Lorem ipsum..."))
-    app.contact.edit_first_contact(Contact(firstname="edited", middlename="edited",
-                                           lastname="edited", nickname="edited", title="edited",
-                                           company="edited", address1="edited",
-                                           home_phonenumber="111111111", mobile_phonenumber="222222222",
-                                           work_phonenumber="333333333", fax="444444444", email1="edited1@test.com",
-                                           email2="edited2@test.com", email3="edited3@test.com",
-                                           homepage="www.edited.com", bday="12", bmonth="June", byear="1886", aday="1",
-                                           amonth="January", ayear="2022", address2="edited2", phone2="555555555",
-                                           notes="edited"))
+    old_contacts = app.contact.get_contacts_list()
+    contact = Contact(firstname="edited", middlename="edited", lastname="edited", nickname="edited", title="edited",
+                      company="edited", address1="edited", home_phonenumber="111111111", mobile_phonenumber="222222222",
+                      work_phonenumber="333333333", fax="444444444", email1="edited1@test.com",
+                      email2="edited2@test.com", email3="edited3@test.com", homepage="www.edited.com",
+                      bday="12", bmonth="June", byear="1886", aday="1", amonth="January", ayear="2022",
+                      address2="edited2", phone2="555555555", notes="edited")
+    contact.id = old_contacts[0].id
+    app.contact.edit_first_contact(contact)
+    new_contacts = app.contact.get_contacts_list()
+    assert len(old_contacts) == len(new_contacts)
+    old_contacts[0] = contact
+    assert sorted(old_contacts, key=Contact.id_or_max) == sorted(new_contacts, key=Contact.id_or_max)
+
