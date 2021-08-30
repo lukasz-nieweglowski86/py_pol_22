@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ca21a818-9ce7-4c04-be1e-d112b99a5304" name="Changes" comment="element locator modified">
+    <list default="true" id="ca21a818-9ce7-4c04-be1e-d112b99a5304" name="Changes" comment="cashing added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixture/contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/contact.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixture/group.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/group.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_add_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_add_contact.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_add_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_add_group.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -221,7 +221,14 @@
       <option name="project" value="LOCAL" />
       <updated>1630355163464</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="cashing added">
+      <created>1630356767898</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1630356767898</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -253,7 +260,8 @@
     <MESSAGE value="lists used in contacts" />
     <MESSAGE value="minor changes" />
     <MESSAGE value="element locator modified" />
-    <option name="LAST_COMMIT_MESSAGE" value="element locator modified" />
+    <MESSAGE value="cashing added" />
+    <option name="LAST_COMMIT_MESSAGE" value="cashing added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
