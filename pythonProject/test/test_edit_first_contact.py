@@ -12,7 +12,7 @@ def test_edit_first_contact(app):
                                 bmonth="March", byear="1986", aday="7", amonth="July", ayear="2020",
                                 address2="Test_address2", phone2="909808707", notes="Lorem ipsum..."))
     old_contacts = app.contact.get_contacts_list()
-    contact = Contact(firstname="", middlename="edited", lastname="edited", nickname="edited", title="edited",
+    contact = Contact(firstname="edited", middlename="edited", lastname="edited", nickname="edited", title="edited",
                       company="edited", address1="edited", home_phonenumber="111111111", mobile_phonenumber="222222222",
                       work_phonenumber="333333333", fax="444444444", email1="edited1@test.com",
                       email2="edited2@test.com", email3="edited3@test.com", homepage="www.edited.com",
