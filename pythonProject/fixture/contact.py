@@ -7,6 +7,14 @@ class ContactHelper:
     def __init__(self, app):
         self.app = app
 
+    def select_first_contact(self):
+        wd = self.app.wd
+        wd.find_element_by_xpath("//img[@title='Edit']").click()
+
+    def select_contact_by_index(self, index):
+        wd = self.app.wd
+        wd.find_elements_by_xpath("//img[@title='Edit']")[index].click()
+
     def change_field_value(self, field_name, value):
         wd = self.app.wd
         if value is not None:
@@ -67,19 +75,23 @@ class ContactHelper:
         self.contact_cache = None
 
     def delete_first_contact(self):
+        self.delete_contact_by_index(0)
+
+    def delete_contact_by_index(self, index):
         wd = self.app.wd
         self.app.open_home_page()
-        # select first contact
-        wd.find_element_by_xpath("//img[@title='Edit']").click()
+        self.select_contact_by_index(index)
         # submit deletion
         wd.find_element_by_xpath("//input[@value='Delete']").click()
         self.contact_cache = None
 
-    def edit_first_contact(self, new_contact_data):
+    def edit_first_contact(self):
+        self.edit_contact_by_index(0)
+
+    def edit_contact_by_index(self, index, new_contact_data):
         wd = self.app.wd
         self.app.open_home_page()
-        # click first contact's 'Edit' icon
-        wd.find_element_by_xpath("//img[@title='Edit']").click()
+        self.select_contact_by_index(index)
         self.fill_contact_form(new_contact_data)
         # submit edition
         wd.find_element_by_name("update").click()
