@@ -12,10 +12,10 @@ def test_delete_some_contact(app):
                                 email3="test_email3@test.com", homepage="www.google.com", bday="11",
                                 bmonth="March", byear="1986", aday="7", amonth="July", ayear="2020",
                                 address2="Test_address2", phone2="909808707", notes="Lorem ipsum..."))
-    old_contacts = app.contact.get_contacts_list()
+    old_contacts = app.contact.get_contact_list()
     index = randrange(len(old_contacts))
     app.contact.delete_contact_by_index(index)
-    new_contacts = app.contact.get_contacts_list()
+    new_contacts = app.contact.get_contact_list()
     assert len(old_contacts) - 1 == len(new_contacts)
     old_contacts[index:index+1] = []
     assert old_contacts

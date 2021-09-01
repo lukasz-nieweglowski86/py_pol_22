@@ -12,7 +12,7 @@ def test_edit_contact(app):
                                 email3="test_email3@test.com", homepage="www.google.com", bday="11",
                                 bmonth="March", byear="1986", aday="7", amonth="July", ayear="2020",
                                 address2="Test_address2", phone2="909808707", notes="Lorem ipsum..."))
-    old_contacts = app.contact.get_contacts_list()
+    old_contacts = app.contact.get_contact_list()
     index = randrange(len(old_contacts))
     contact = Contact(firstname="edited", middlename="edited", lastname="edited", nickname="edited", title="edited",
                       company="edited", address1="edited", home_phonenumber="111111111", mobile_phonenumber="222222222",
@@ -22,7 +22,7 @@ def test_edit_contact(app):
                       address2="edited2", phone2="555555555", notes="edited")
     contact.id = old_contacts[index].id
     app.contact.edit_contact_by_index(index, contact)
-    new_contacts = app.contact.get_contacts_list()
+    new_contacts = app.contact.get_contact_list()
     assert len(old_contacts) == len(new_contacts)
     old_contacts[index] = contact
     assert sorted(old_contacts, key=Contact.id_or_max) == sorted(new_contacts, key=Contact.id_or_max)
