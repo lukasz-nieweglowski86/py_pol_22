@@ -18,22 +18,22 @@ def random_phone(prefix, maxlen):
 months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November",
           "December"]
 
-testdata = [Contact(firstname=random_string("Test_firstname", 8), middlename=random_string("Test_middlename", 8),
-                    lastname=random_string("Test_lastname", 12), nickname=random_string("Test_nickname", 8),
-                    title=random_string("Test_title", 6), company=random_string("Test_company", 20),
-                    address1=random_string("Test_address1", 12), home_phonenumber=random_phone("home_phonenumber", 12),
-                    mobile_phonenumber=random_phone("mobile_phonenumber", 12),
-                    work_phonenumber=random_phone("work_phonenumber", 12), fax=random_phone("fax", 12),
-                    email1=random_string("email1", 16), email2=random_string("email2", 16),
-                    email3=random_string("email3", 16), homepage=random_string("homepage", 20),
+testdata = [Contact(firstname=random_string("firstname: ", 8), middlename=random_string("middlename: ", 8),
+                    lastname=random_string("lastname: ", 12), nickname=random_string("nickname: ", 8),
+                    title=random_string("title: ", 6), company=random_string("company: ", 20),
+                    address1=random_string("address1: ", 12), home_phonenumber=random_phone("home_phonenumber: ", 12),
+                    mobile_phonenumber=random_phone("mobile_phonenumber: ", 12),
+                    work_phonenumber=random_phone("work_phonenumber: ", 12), fax=random_phone("fax: ", 12),
+                    email1=random_string("email1: ", 16), email2=random_string("email2: ", 16),
+                    email3=random_string("email3: ", 16), homepage=random_string("homepage: ", 20),
                     bday=str(random.randint(1, 29)),
                     bmonth=random.choice(months),
                     byear=str(random.randint(1950, 2016)),
                     aday=str(random.randint(1, 29)),
                     amonth=random.choice(months),
                     ayear=str(random.randint(1950, 2016)),
-                    address2=random_string("address2", 16), phone2=random_phone("phone2", 12),
-                    notes=random_string("notes", 50))
+                    address2=random_string("address2: ", 16), phone2=random_phone("phone2: ", 12),
+                    notes=random_string("notes: ", 50))
             for i in range(5)]
 
 

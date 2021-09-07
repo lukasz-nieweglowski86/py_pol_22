@@ -11,8 +11,8 @@ def random_string(prefix, maxlen):
 
 
 testdata = [Group(name="", header_name="", footer_name="")] + [
-    Group(name=random_string("name", 10), header_name=random_string("header", 20),
-          footer_name=random_string("footer", 20))
+    Group(name=random_string("name: ", 10), header_name=random_string("header: ", 20),
+          footer_name=random_string("footer: ", 20))
     for i in range(5)
 ]
 
