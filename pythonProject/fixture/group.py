@@ -1,4 +1,5 @@
 from model.group import Group
+import json
 
 
 class GroupHelper:
@@ -8,8 +9,11 @@ class GroupHelper:
 
     def open_groups_page(self):
         wd = self.app.wd
-        if not (wd.current_url.endswith("/group.php") and len(wd.find_elements_by_name("new")) > 0):
+        f = open("target.json")
+        target = json.load(f)
+        if not (wd.current_url.endswith(target["groups_page"]) and len(wd.find_elements_by_name("new")) > 0):
             wd.find_element_by_link_text("groups").click()
+        f.close()
 
     def select_first_group(self):
         wd = self.app.wd
@@ -72,8 +76,11 @@ class GroupHelper:
 
     def return_to_groups_page(self):
         wd = self.app.wd
-        if not (wd.current_url.endswith("/group.php") and len(wd.find_elements_by_link_text("group page")) > 0):
+        f = open("target.json")
+        target = json.load(f)
+        if not (wd.current_url.endswith(target["groups_page"]) and len(wd.find_elements_by_link_text("group page")) > 0):
             wd.find_element_by_link_text("group page").click()
+        f.close()
 
     def count(self):
         wd = self.app.wd

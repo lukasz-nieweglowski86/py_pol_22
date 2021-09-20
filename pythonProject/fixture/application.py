@@ -2,6 +2,7 @@ from selenium import webdriver
 from fixture.session import SessionHelper
 from fixture.group import GroupHelper
 from fixture.contact import ContactHelper
+import json
 
 
 class Application:
@@ -29,9 +30,12 @@ class Application:
 
     def open_home_page(self):
         wd = self.wd
-        if not (wd.current_url.endswith("localhost/addressbook/") and
+        f = open("target.json")
+        target = json.load(f)
+        if not (wd.current_url.endswith(target["contact_homepageUrl"]) and
                 len(wd.find_elements_by_name("searchstring")) > 0):
             wd.get(self.base_url)
+        f.close()
 
     def destroy(self):
         self.wd.quit()

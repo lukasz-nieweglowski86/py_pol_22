@@ -1,6 +1,7 @@
 from selenium.webdriver.support.ui import Select
 from model.contact import Contact
 import re
+import json
 
 
 class ContactHelper:
@@ -100,9 +101,12 @@ class ContactHelper:
 
     def return_to_home_page(self):
         wd = self.app.wd
-        if not (wd.current_url.endswith("localhost/addressbook/edit.php") and
+        f = open("target.json")
+        target = json.load(f)
+        if not (wd.current_url.endswith(target["contact_editpageUrl"]) and
                 len(wd.find_elements_by_link_text("add next")) > 0):
             wd.find_element_by_link_text("home page").click()
+        f.close()
 
     def count(self):
         wd = self.app.wd
