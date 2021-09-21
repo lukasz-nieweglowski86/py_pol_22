@@ -103,7 +103,7 @@ class ContactHelper:
         wd = self.app.wd
         f = open("target.json")
         target = json.load(f)
-        if not (wd.current_url.endswith(target["contact_editpageUrl"]) and
+        if not (wd.current_url.endswith(target["baseUrl"] + "edit.php") and
                 len(wd.find_elements_by_link_text("add next")) > 0):
             wd.find_element_by_link_text("home page").click()
         f.close()

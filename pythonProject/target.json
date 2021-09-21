@@ -2,7 +2,5 @@
   "baseUrl": "http://localhost/addressbook/",
   "username": "admin",
   "password": "secret",
-  "contact_homepageUrl": "localhost/addressbook/",
-  "contact_editpageUrl": "localhost/addressbook/edit.php",
   "groups_page": "/group.php"
 }

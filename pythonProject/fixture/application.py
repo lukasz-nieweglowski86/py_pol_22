@@ -32,7 +32,7 @@ class Application:
         wd = self.wd
         f = open("target.json")
         target = json.load(f)
-        if not (wd.current_url.endswith(target["contact_homepageUrl"]) and
+        if not (wd.current_url.endswith(target["baseUrl"]) and
                 len(wd.find_elements_by_name("searchstring")) > 0):
             wd.get(self.base_url)
         f.close()
